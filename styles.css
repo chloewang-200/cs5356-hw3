@@ -1,53 +1,114 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    transition: background-color 0.3s ease-in-out;
 }
 
 header {
-    background: #333;
+    background-color: #5aafff;
     color: white;
+    text-align: center;
     padding: 20px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.bio {
+header:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.image-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin: 20px;
+    gap: 10px; /* Adds space between images and emoji */
+    justify-content: center;
 }
 
-.bio img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+
+img {
+    max-width: 30%;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.api-data {
-    margin: 20px;
+img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    opacity: 0.9; /* Slightly fade the image to show the effect */
 }
+
 
 button {
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
-    background: #007BFF;
+    background-color: #5aafff;
     color: white;
+    font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 10px;
+    transition: background-color 0.8s ease-in-out;
 }
 
 button:hover {
-    background: #0056b3;
+    background-color: #0056b3;
 }
 
-footer {
-    background: #222;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+table {
     width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
 }
+
+th, td {
+    border: 2px solid #5aafff;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+}
+
+td {
+    background-color: #e3f2fd;
+}
+
+tr:nth-child(even) td {
+    background-color: #bbdefb;
+}
+
+tr:hover td {
+    background-color: #90caf9;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #ddd;
+}
+

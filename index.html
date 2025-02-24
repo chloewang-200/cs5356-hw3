@@ -3,24 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chloe Wang's personal homepage">
-    <title>Chloe Wang</title>
+    <title>Chloe's Personal Homepage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <h1>Chloe Wang</h1>
+        Welcome to My Homepage
     </header>
 
-    <section class="bio">
-        <img src="images/image.png" alt="Profile Picture">
-        <p>Hi, I'm Chloe Wang. Connect with me on <a href="https://github.com/chloewang-200">GitHub</a>.</p>
-    </section>
+    <div class="container">
+        <h2>Me and My Random Dog Friend 🐶💕</h2>
+        <div class="image-container">
+            <img id="profilePic" src="images/image.png" alt="Chloe Wang">
+            <span class="heart">❤️</span>
+            <img id="dogImage" src="images/placeholder-dog.png" alt="Random Dog">
+        </div>
+        <p>Hello! I'm Chloe. I love creating fun things at the intersection of art and technology :) And I love dogs.</p>
+        <button id="fetchDog">Get New Dog</button>
+    </div>
+
+    <div class="container">
+        <h2>My Weekly Schedule 📅</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td rowspan="5">Monday</td><td>10:10-11:25</td><td>Blockchain & Crypto</td></tr>
+                <tr><td>11:40-12:55</td><td>Design Ubiquitous Devices</td></tr>
+                <tr><td>13:25-14:40</td><td>NLP</td></tr>
+                <tr><td>16:20-17:35</td><td>Remaking the City</td></tr>
+                <tr><td>17:55-19:10</td><td>Building Startup Systems</td></tr>
+                <!-- <tr><td>19:15-20:30</td><td>Tech Media Democracy</td></tr> -->
+
+                <tr><td>Tuesday</td><td>18:00</td><td>Definer Meeting</td></tr>
+
+                <tr><td rowspan="6">Wednesday</td><td>10:10-11:25</td><td>Blockchain & Crypto</td></tr>
+                <tr><td>11:40-12:55</td><td>Design Ubiquitous Devices</td></tr>
+                <tr><td>13:25-14:40</td><td>NLP</td></tr>
+                <tr><td>14:55-16:10</td><td>Tech Media Democracy</td></tr>
+                <tr><td>16:20-17:35</td><td>Remaking the City</td></tr>
+                <tr><td>17:55-19:10</td><td>Building Startup Systems</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Project Insights 📝</h2>
+        
+        <h3>📌 HTML Element Used: &lt;table&gt;</h3>
+        <p>
+            For this project, I explored the &lt;table&gt; element, which is used to <strong>display structured data</strong> in a tabular format. 
+            The <code>&lt;table&gt;</code> element organizes content into <strong>rows and columns</strong>, making it ideal for <strong>schedules, financial data, and reports</strong>.
+        </p>
+        <p>
+            <strong>What I learned:</strong>
+            <ul>
+                <li><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tr&gt;</code> improve <strong>accessibility and readability</strong>.</li>
+                <li><code>&lt;th&gt;</code> defines table headers, making them bold and centered by default.</li>
+                <li>You can <strong>span multiple rows/columns</strong> using <code>rowspan</code> and <code>colspan</code>.</li>
+            </ul>
+        </p>
+    
+        <h3>🎨 CSS Property Used: Smooth Transitions</h3>
+        <p>
+            For my CSS property experiment, I explored the <strong><code>transition</code></strong> property to create a <strong>smooth hover effect on images</strong>. 
+            The <code>transition</code> property allows for gradual changes to CSS properties over time, making animations feel natural.
+        </p>
+        <p>
+            <strong>How I used it:</strong>
+            <ul>
+                <li>When hovering over an image, it <strong>grows slightly</strong> (<code>scale(1.1)</code>) and <strong>fades</strong> (<code>opacity: 0.9</code>) to create a subtle effect.</li>
+                <li>This effect makes the images feel more interactive and visually engaging.</li>
+            </ul>
+        </p>
+    </div>
+    
 
     <footer>
-        <p>&copy; 2025 Chloe Wang. All rights reserved.</p>
+        &copy; 2025 Chloe Wang | Personal Project
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
